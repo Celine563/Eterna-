@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+  <link rel="stylesheet" type="text/css" href="CSS/footer.css">
 </head>
 <body>
-
 
 <footer class="bottom">
 
@@ -16,11 +15,10 @@
 </form>
 <p>By clicking on "Subscribe", you confirm that <br>you have read and understood our <a href="privacypolicy.php">Privacy Policy</a> <br> and that you want to receive the newsletter and <br> other marketing communication as explained.</p>
 
-<h3>Contac us</h3>
-<a href="FAQ.php">FAQ</a>
-<br>
-<br>
-<a href="CareandServices.php">Care & Services</a>
+
+
+
+
 
 
 </footer>
