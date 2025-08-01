@@ -1,0 +1,99 @@
+.top h1 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .top h1 a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    padding: 20px;
+    border-bottom: 2px solid black;
+  }
+  
+  .top h1 {
+    font-size: 55px; 
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .top h3 {
+    font-size: 26px;
+  }
+
+  .top img.search {
+    padding-left: 90px;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 50px; 
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  .top img.account {
+    padding-top: 10px;
+    width: 40px; 
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  .top img.shoppingBag {
+    padding-left: 17px;
+    padding-top: 9px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .top .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.top .dropdown h3 {
+    padding: 10px 0;
+    padding: 10px;
+    font-size: 26px;
+}
+
+.top .menu {
+    display: none;
+    position: absolute; 
+    top: 60px;
+    background: white;
+    list-style-type: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+
+
+.top .menu li {
+    padding: 5px 10px;
+}
+
+.top .menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.top .dropdown:hover .menu {
+    display: block;
+}
+
+
+  
