@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+<link rel="stylesheet" type="text/css" href="CSS/footers.css">
+
 </head>
 <body>
 
