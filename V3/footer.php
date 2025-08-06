@@ -71,12 +71,6 @@
 
 </div>
 
-<div class="Socials">
- <a href="social.php">
-  <img src="Images/Facebook.png" alt="facebook" class="facebook">
-</a>
-
-</div>
 
 </footer>
 

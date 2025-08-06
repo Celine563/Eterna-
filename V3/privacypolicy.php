@@ -102,6 +102,11 @@ ETERNA reserves the right to amend this Privacy Policy at any time. The Privacy 
 <br>
 Last updated: 11 July 2025</p>
 
+
+<br>
+
 <?php require 'footer.php'; ?>
+<br>
+<?php require 'social.php'; ?>
 </body>
 </html>
