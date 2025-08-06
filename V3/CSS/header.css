@@ -1,6 +1,8 @@
-body {
-    background-color: aquamarine;
+.women {
+    display: block;
+    padding-left: 50px;
 }
+
 .top h1 a {
     text-decoration: none;
     color: black;
@@ -31,7 +33,7 @@ body {
   }
 
   .top img.search {
-    padding-left: 90px;
+    padding-left: 60px;
     padding-right: 20px;
     padding-top: 10px;
     width: 50px; 
