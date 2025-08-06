@@ -1,6 +1,5 @@
-.dropdown {
-     display: block;
-    padding-left: 100px;
+body {
+    background-color: aquamarine;
 }
 .top h1 a {
     text-decoration: none;
@@ -81,13 +80,11 @@
     padding: 20px;
     border: 1px solid #ccc;
     min-width: 150px;
-    z-index: 1000;
+
 }
 
-
-
 .top .menu li {
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 .top .menu a {
