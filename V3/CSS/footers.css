@@ -1,9 +1,29 @@
-
 .bottom {
-border-top: 2px solid black;
-
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 40px; 
+  flex-wrap: wrap;
 }
 
-body {
-  background: yellow;
+.newsletter {
+  flex: 1;
+  min-width: 300px;
+}
+
+.services-container {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.services-container h3,
+.services-container a {
+  margin: 5px 0;
 }
