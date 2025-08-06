@@ -13,12 +13,14 @@
     <h1><a href="HomePage.php">ETERNA</a></h1>
     
     <div class="dropdown">
+        <div class="women">
     <h3>Women</h3>
     <ul class="menu">
         <li><a href="dresses.php">Dresses</a></li>
         <li><a href="shoes.php">Shoes</a></li>
         <li><a href="accessories.php">Accessories</a></li>
     </ul>
+    </div>
 </div>
 
 

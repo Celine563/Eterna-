@@ -1,5 +1,7 @@
-
-
+.dropdown {
+     display: block;
+    padding-left: 100px;
+}
 .top h1 a {
     text-decoration: none;
     color: black;
