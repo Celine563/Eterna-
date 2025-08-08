@@ -6,7 +6,7 @@ class Connection {
     private static $host = "localhost";
     private static $dbname = "Eterna";
     private static $username = "root";
-    private static $password = "";
+    private static $password = "root";
 
     private static $charset = "utf8mb4";
     private static $pdo = null;

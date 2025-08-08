@@ -23,7 +23,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <br>
 <br>
 <?php if (!empty($products)): ?>
-  <div class="product-list">
+  <div class="brownShoe">
     <?php foreach ($products as $product): ?>
       <?php if (!empty($product['image_data'])): ?>
         <img src="data:image/jpeg;base64,<?= base64_encode($product['image_data']) ?>"
