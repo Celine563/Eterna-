@@ -3,9 +3,6 @@ body{
 }
 
 .BrownShoe {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: block;
+    padding-left: 70px;
 }

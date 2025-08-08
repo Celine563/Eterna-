@@ -1,45 +1,28 @@
 <?php
 require_once 'Util/connection.php';
+require_once 'Util/products.php';
 
 $pdo = Connection::getConnection();
 
-$sql = "SELECT p.image_data 
-        FROM Products p
-        JOIN Categories c ON p.category_id = c.category_id
-        ORDER BY c.sort_order, p.product_name";
+$filter = ['category_id' => 1];
 
-$stmt = $pdo->query($sql);
-$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$products = getProducts($pdo, $filter);
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="CSS/HomeStyle.css">
+  <link rel="stylesheet" href="CSS/HomeStyle.css">
+  <link rel="stylesheet" href="CSS/products.css">
 </head>
 <body>
 
 <?php require 'header.php'; ?>
-<br>
-<br>
-<?php if (!empty($products)): ?>
-  <div class="brownShoe">
-    <?php foreach ($products as $product): ?>
-      <?php if (!empty($product['image_data'])): ?>
-        <img src="data:image/jpeg;base64,<?= base64_encode($product['image_data']) ?>"
-             style="max-width:200px; height:auto;">
-      <?php endif; ?>
-    <?php endforeach; ?>
-  </div>
-<?php else: ?>
-  <p>No images found.</p>
-<?php endif; ?>
 
-<br>
-<br>
+<?php renderProducts($products); ?>
 
 <?php require 'footer.php'; ?>
-<br>
 <?php require 'social.php'; ?>
 
 </body>

@@ -108,5 +108,5 @@ INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('About Us'
 INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Mission', 6, 2);
 
 INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at, image_data)
-VALUES ('Brown heel', 'Chunky brown heeled mules...', 85.00, 100, 1, NOW(), NULL);
+VALUES ('Brown heel', 'Chunky brown heeled mules', 85.00, 100, 1, NOW(), NULL);
 
