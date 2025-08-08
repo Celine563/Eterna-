@@ -22,6 +22,9 @@ CREATE TABLE Categories (
     FOREIGN KEY (parent_id) REFERENCES Categories(category_id) ON DELETE CASCADE
 );
 
+ALTER TABLE Categories ADD COLUMN sort_order INT DEFAULT 0;
+
+
 CREATE TABLE Products (
     product_id INT AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR(20),
@@ -76,32 +79,32 @@ CREATE TABLE Payments (
     payment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (order_id) REFERENCES Orders(order_id)
 );
-INSERT INTO Categories (category_name, parent_id) VALUES ('Women', NULL);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Men', NULL);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Children', NULL);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Bags', NULL);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Beauty', NULL);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Our Story', NULL);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Women', NULL, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Men', NULL, 2);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Children', NULL, 3);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Bags', NULL, 4);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Beauty', NULL, 5);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Our Story', NULL, 6);
 
-INSERT INTO Categories (category_name, parent_id) VALUES ('Dresses', 1);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Shoes', 1);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Accessories', 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Dresses', 1, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Shoes', 1, 2);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Accessories', 1, 3);
 
-INSERT INTO Categories (category_name, parent_id) VALUES ('Suits', 2);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Casual', 2);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Shoes', 2);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Suits', 2, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Casual', 2, 2);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Shoes', 2, 3);
 
-INSERT INTO Categories (category_name, parent_id) VALUES ('Clothing', 3);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Toys', 3);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Clothing', 3, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Toys', 3, 2);
 
-INSERT INTO Categories (category_name, parent_id) VALUES ('Handbags', 4);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Backpacks', 4);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Handbags', 4, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Backpacks', 4, 2);
 
-INSERT INTO Categories (category_name, parent_id) VALUES ('Skincare', 5);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Makeup', 5);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Skincare', 5, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Makeup', 5, 2);
 
-INSERT INTO Categories (category_name, parent_id) VALUES ('About Us', 6);
-INSERT INTO Categories (category_name, parent_id) VALUES ('Mission', 6);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('About Us', 6, 1);
+INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Mission', 6, 2);
 
 
 
