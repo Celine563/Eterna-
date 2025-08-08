@@ -1,5 +1,5 @@
 <?php
-include 'Util/connection.php';
+require_once 'Util/connection.php';
 
 $pdo = Connection::getConnection();
 
