@@ -107,6 +107,15 @@ INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Makeup', 
 INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('About Us', 6, 1);
 INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Mission', 6, 2);
 
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at, image_data)
-VALUES ('Brown heel', 'Chunky brown heeled mules', 85.00, 100, 1, NOW(), NULL);
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Brown heel', 'Chunky brown heeled mules', 85.00, 100, 1, NOW());
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Black dress', 'Black dress with white edges', 128.00, 49, 2, NOW());
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Brown bag', 'Classy brown tote bag', 47.00, 82, 3, NOW());
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Gold necklace', 'Classy gold dangling necklace', 95.00, 52, 4, NOW());
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Bunny', 'Cute beige bunny with clothes', 32.00, 12, 5, NOW());
+
 

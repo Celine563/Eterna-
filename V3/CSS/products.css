@@ -1,8 +1,26 @@
-body{
-    gap: 70px;
+.clothes{
+  display: flex;
+  gap: 160px;
+
 }
 
-.BrownShoe {
+.brownShoe {
     display: block;
-    padding-left: 70px;
+    padding-left: 160px;
 }
+
+.clothes img {
+    display: block;
+    max-height: 300px;
+    max-width: auto;
+ } 
+
+ .accessories {
+      display: flex;
+  gap: 160px;
+ }
+
+ .bunny {
+    display: block;
+    padding-left: 160px;
+}   

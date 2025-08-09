@@ -42,7 +42,7 @@ function renderProducts($products) {
             echo '<p>No image available</p>';
         }
         echo '<h3>' . htmlspecialchars($product['product_name']) . '</h3>';
-        echo '<p>' . htmlspecialchars(substr($product['description'], 0, 100)) . '...</p>';
+        echo '<p>' . htmlspecialchars(substr($product['description'], 0, 100)) . ' </p>';
         echo '<p>Price: $' . number_format($product['price'], 2) . '</p>';
         echo '</div>';
     }
