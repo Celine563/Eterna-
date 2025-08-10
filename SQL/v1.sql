@@ -28,7 +28,7 @@ ALTER TABLE Categories ADD COLUMN sort_order INT DEFAULT 0;
 
 CREATE TABLE Products (
     product_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_name VARCHAR(20),
+    product_name VARCHAR(500),
     description TEXT,
     price DECIMAL(10, 2),
     stock_quantity INT DEFAULT 0,
@@ -117,5 +117,10 @@ INSERT INTO products (product_name, description, price, stock_quantity, category
 VALUES ('Gold necklace', 'Classy gold dangling necklace', 95.00, 52, 4, NOW());
 INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
 VALUES ('Bunny', 'Cute beige bunny with clothes', 32.00, 12, 5, NOW());
-
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Ties', 'Classy chic ties', 18.00, 14, 6, NOW());
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Brown backpack', 'Chic school brown backpack', 49.00, 57, 7, NOW());
+INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
+VALUES ('Natural pink eyeshadow', 'Eyeshadow case with natural pink colours', 53.00, 74, 8, NOW());
 
