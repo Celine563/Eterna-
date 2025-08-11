@@ -1,43 +1,31 @@
-.clothes{
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clothes,
+.accessories {
     display: flex;
     gap: 160px;
-    max-width: 50px;
-    max-height: 50px;
-      text-decoration: none;
-  color: black;
-
-
 }
 
-.brownShoe {
+.brownShoe,
+.bunny {
     display: block;
     padding-left: 160px;
 }
 
-.clothes img {
+.clothes img,
+.accessories img {
     display: block;
-    max-height: 300px;
-    max-width: auto;
- } 
+    max-height: 300px;  
+    height: auto;
+    width: auto;
+}
 
- .accessories {
-      display: flex;
-      gap: 160px;
-      max-width: 50px;
-      max-height: 50px;
-        text-decoration: none;
-  color: black;
-
-
- }
-
- .bunny {
-    display: block;
-    padding-left: 160px;
-}   
-
-.accessories a {
+.accessories a,
+.clothes a {
     text-decoration: none;
-  color: black;
-
+    color: black;
 }
+

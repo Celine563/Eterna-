@@ -1,8 +1,9 @@
 <?php
+
 function getProducts($pdo, $filter = []) {
     $sql = "SELECT p.image_data, p.product_name, p.description, p.price FROM Products p";
     
-    // Example: filter by category_id or product_ids
+   
     $conditions = [];
     $params = [];
 

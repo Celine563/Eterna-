@@ -37,25 +37,33 @@ $products8 = getProducts($pdo, $filter8);
 <div class="clothes">
   <div class="brownShoe">
     <br>
+    <a href="brownshoe.php?id=1">
     <?php renderProducts($products1); ?>
+</a>
     <br>
   </div>
 
   <div class="blackDress">
     <br>
+    <a href="blackdress.php?id=2">
     <?php renderProducts($products2); ?>
+    </a>
     <br>
   </div>
 
   <div class="brownBag">
     <br>
+    <a href="brownbag.php?id=3">
     <?php renderProducts($products3); ?>
+    </a>
     <br>
   </div>
 
   <div class="goldNecklace">
     <br>
+    <a href="goldnecklace.php?id=4">
     <?php renderProducts($products4); ?>
+    </a>
     <br>
   </div>
 </div>
@@ -63,19 +71,25 @@ $products8 = getProducts($pdo, $filter8);
 <div class="accessories">
   <div class="bunny">
     <br>
+    <a href="bunny.php?id=5">
     <?php renderProducts($products5); ?>
+    </a>
     <br>
   </div>
 
   <div class="ties">
     <br>
+    <a href="ties.php?id=6">
     <?php renderProducts($products6); ?>
+    </a>
     <br>
   </div>
 
   <div class="backpack">
     <br>
+    <a href="backpack.php?id=7">
     <?php renderProducts($products7); ?>
+    </a>
     <br>
   </div>
 
