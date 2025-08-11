@@ -1,22 +1,33 @@
 <?php
-include "Connection.php";
+require_once 'connection.php';
 
 $pdo = Connection::getConnection();
 
-if (isset($_GET["image_id"])) {
-    $image_id = intval($_GET["image_id"]);
+function getProductImage($pdo, $product_id) {
+    $sql = "SELECT image_data FROM Products WHERE product_id = :product_id LIMIT 1";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['product_id' => $product_id]);
+    return $stmt->fetchColumn(); // returns raw image blob or false
+}
 
-    $stmt = $pdo->prepare("SELECT image_data FROM Images WHERE image_id = :image_id");
-    $stmt->execute(['image_id' => $image_id]);
-    $imageData = $stmt->fetchColumn();
-
-    if ($imageData !== false) {
-        header("Content-Type: image/jpeg");
-        echo $imageData;
+function renderProductImage($imageData) {
+    if ($imageData) {
+        echo '<img src="data:image/png;base64,' . base64_encode($imageData) . '" style="max-width:200px; height:auto;">';
     } else {
-        echo "Image not found.";
+        echo '<p>No image available</p>';
     }
 }
+if (isset($_GET['product_id'])) {
+    $product_id = intval($_GET['product_id']);
+    $imageData = getProductImage($pdo, $product_id);
+    
+    if ($imageData !== false) {
+        header('Content-Type: image/png');
+        echo $imageData;
+    } else {
+        echo 'Image not found.';
+    }
+} 
 
 Connection::closeConnection();
 ?>

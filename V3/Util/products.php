@@ -38,7 +38,7 @@ function renderProducts($products) {
     foreach ($products as $product) {
         echo '<div class="product-item">';
         if (!empty($product['image_data'])) {
-            echo '<img src="data:image/jpeg;base64,' . base64_encode($product['image_data']) . '" style="max-width:200px; height:auto;">';
+            echo '<img src="data:image/png;base64,' . base64_encode($product['image_data']) . '" style="max-width:200px; height:auto;">';
         } else {
             echo '<p>No image available</p>';
         }

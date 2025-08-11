@@ -1,8 +1,16 @@
+<?php
+require_once 'Util/connection.php';
+require_once 'Util/desc.php';
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="CSS/HomeStyle.css">
-  <link rel="stylesheet" type="text/css" href="CSS/product.css">
+  <link rel="stylesheet" href="CSS/product.css">
+  <link rel="stylesheet" href="CSS/HomeStyle.css">
 </head>
 <body>
 
@@ -10,16 +18,15 @@
 
 <br>
 
-<img src="Images/brownheel.png" alt="Brown heel" />
+<img src="Util/images.php?product_id=1" alt="Brown heel" />
 
-<br>
-<br>
+
+
+<br><br>
 
 <?php require 'footer.php'; ?>
 <br>
 <?php require 'social.php'; ?>
-
-
 
 </body>
 </html>
