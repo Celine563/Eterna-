@@ -107,20 +107,30 @@ INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Makeup', 
 INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('About Us', 6, 1);
 INSERT INTO Categories (category_name, parent_id, sort_order) VALUES ('Mission', 6, 2);
 
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Brown heel', 'Chunky brown heeled mules', 85.00, 100, 1, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Black dress', 'Black dress with white edges', 128.00, 49, 2, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Brown bag', 'Classy brown tote bag', 47.00, 82, 3, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Gold necklace', 'Classy gold dangling necklace', 95.00, 52, 4, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Bunny', 'Cute beige bunny with clothes', 32.00, 12, 5, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Ties', 'Classy chic ties', 18.00, 14, 6, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Brown backpack', 'Chic school brown backpack', 49.00, 57, 7, NOW());
-INSERT INTO products (product_name, description, price, stock_quantity, category_id, created_at)
-VALUES ('Natural pink eyeshadow', 'Eyeshadow case with natural pink colours', 53.00, 74, 8, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Brown heel', 1, 'Chunky brown heeled mules', 85.00, 100, 1, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Black dress', 2, 'Black dress with white edges', 128.00, 49, 2, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Brown bag', 3, 'Classy brown tote bag', 47.00, 82, 3, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Gold necklace', 4, 'Classy gold dangling necklace', 95.00, 52, 4, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Bunny', 5, 'Cute beige bunny with clothes', 32.00, 12, 5, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Ties', 6, 'Classy chic ties', 18.00, 14, 6, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Brown backpack', 7, 'Chic school brown backpack', 49.00, 57, 7, NOW());
+INSERT INTO products (product_name, product_id, description, price, stock_quantity, category_id, created_at)
+VALUES ('Natural pink eyeshadow', 8, 'Eyeshadow case with natural pink colours', 53.00, 74, 8, NOW());
+
+UPDATE `products` SET `product_id` = 1,`product_name` = 'Brown heel',`description` = 'Chunky brown heeled mules',`price` = '85.00',`stock_quantity` = 100,`category_id` = 8,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 1;
+UPDATE `products` SET `product_id` = 2,`product_name` = 'Black dress',`description` = 'Black dress with white edges',`price` = '128.00',`stock_quantity` = 49,`category_id` = 7,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 2;
+UPDATE `products` SET `product_id` = 3,`product_name` = 'Brown bag',`description` = 'Classy brown tote bag',`price` = '47.00',`stock_quantity` = 82,`category_id` = 15,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 3;
+UPDATE `products` SET `product_id` = 4,`product_name` = 'Gold necklace',`description` = 'Classy gold dangling necklace',`price` = '95.00',`stock_quantity` = 52,`category_id` = 9,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 4;
+UPDATE `products` SET `product_id` = 5,`product_name` = 'Bunny',`description` = 'Cute beige bunny with clothes',`price` = '32.00',`stock_quantity` = 12,`category_id` = 14,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 5;
+UPDATE `products` SET `product_id` = 6,`product_name` = 'Ties',`description` = 'Classy chic ties',`price` = '18.00',`stock_quantity` = 14,`category_id` = 10,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 6;
+UPDATE `products` SET `product_id` = 7,`product_name` = 'Brown backpack',`description` = 'Chic school brown backpack',`price` = '49.00',`stock_quantity` = 28,`category_id` = 16,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 7;
+UPDATE `products` SET `product_id` = 8,`product_name` = 'Natural pink eyeshadow',`description` = 'Eyeshadow case with natural pink colours',`price` = '53.00',`stock_quantity` = 62,`category_id` = 18,`created_at` = '2025-08-11 11:57:36',`image_data` = NULL WHERE `products`.`product_id` = 8;
+COMMIT;
 

@@ -4,17 +4,16 @@ require_once 'Util/products.php';
 
 $pdo = Connection::getConnection();
 
-// Filters for each category
-$filter1 = ['category_id' => 1];
-$filter2 = ['category_id' => 2];
-$filter3 = ['category_id' => 3];
-$filter4 = ['category_id' => 4];
-$filter5 = ['category_id' => 5];
-$filter6 = ['category_id' => 6];
-$filter7 = ['category_id' => 7];
-$filter8 = ['category_id' => 8];
+$filter1 = ['category_id' => 8]; 
+$filter2 = ['category_id' => 7]; 
+$filter3 = ['category_id' => 15]; 
+$filter4 = ['category_id' => 9];  
+$filter5 = ['category_id' => 14]; 
+$filter6 = ['category_id' => 10]; 
+$filter7 = ['category_id' => 16]; 
+$filter8 = ['category_id' => 18];
 
-// Get products per category
+
 $products1 = getProducts($pdo, $filter1);
 $products2 = getProducts($pdo, $filter2);
 $products3 = getProducts($pdo, $filter3);
@@ -82,7 +81,9 @@ $products8 = getProducts($pdo, $filter8);
 
   <div class="eyeshadow">
     <br>
+    <a href="eyeshadow.php?id=8">
     <?php renderProducts($products8); ?>
+</a>
     <br>
   </div>
 </div>

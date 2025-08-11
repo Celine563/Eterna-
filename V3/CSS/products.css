@@ -1,6 +1,11 @@
 .clothes{
-  display: flex;
-  gap: 160px;
+    display: flex;
+    gap: 160px;
+    max-width: 50px;
+    max-height: 50px;
+      text-decoration: none;
+  color: black;
+
 
 }
 
@@ -17,10 +22,22 @@
 
  .accessories {
       display: flex;
-  gap: 160px;
+      gap: 160px;
+      max-width: 50px;
+      max-height: 50px;
+        text-decoration: none;
+  color: black;
+
+
  }
 
  .bunny {
     display: block;
     padding-left: 160px;
 }   
+
+.accessories a {
+    text-decoration: none;
+  color: black;
+
+}
