@@ -1,6 +1,6 @@
 .women {
     display: block;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .top h1 a {
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     gap: 30px; 
-    padding: 20px;
+    margin: 20px;
     border-bottom: 2px solid black;
   }
   

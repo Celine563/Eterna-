@@ -1,10 +1,30 @@
-    img {
-        padding-left: 50px;
-        width: 500px;
-        height: 400px;
-        border-radius: 600px;
-    }
+.images img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 400px;
+    border-radius: 600px;
+}
 
-.prod{
-    padding-top: 500px;
+
+.prod {
+    display: flex;
+    margin-left: 800px;
+    font-size: 20px;
+ 
+}
+
+.desc {
+    display: flex;
+    font-size: 40px;
+}
+
+.buy {
+    display: flex;
+    margin-left: 800px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
 }

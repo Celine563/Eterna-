@@ -18,8 +18,15 @@ require_once 'Util/desc.php';
 
 <br>
 
-<img src="Util/images.php?product_id=1" alt="Brown heel" />
+<?php
+renderCategoryProducts(8); 
+?>
 
+<button class='buy'>Buy Now</button>
+
+<div class="images">
+<img src="Util/images.php?product_id=1" alt="Brown heel"/>
+</div>
 
 
 <br><br>
