@@ -37,7 +37,7 @@ $products8 = getProducts($pdo, $filter8);
 <div class="clothes">
   <div class="brownShoe">
     <br>
-    <a href="brownshoe.php?id=1">
+    <a href="productsPage.php?id=1">
     <?php renderProducts($products1); ?>
 </a>
     <br>
